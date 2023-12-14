@@ -268,7 +268,7 @@ int main(){
 
     double y[101] = {0};//(a-b)/h+1개
     double y0 = y[0];
-    odeRK2(ODE1, y, a, b, h, y0);
+    ode(ODE1, y, a, b, h, y0);
     for (int i = 0; i < 101; i++) {
         printf("y[%d] %f\n", i, y[i]);
     }
